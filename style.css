@@ -1,0 +1,97 @@
+.level-7h1{
+    color: rgb(57, 109, 92);
+    text-align: center;
+}
+
+.level-7h2{
+    color: rgb(87, 23, 23);
+}
+
+.firstp{
+    color: red;
+}
+
+.secondp{
+    color: #8a2be2;
+}
+
+.thirdp{
+    color: rgb(12, 10, 119);
+}
+
+.background{
+    color: black;
+    background-color: rgb(175, 175, 34);
+    padding: 0.1rem;
+}
+
+.background2{
+    color: white;
+    background-color: teal;
+    padding: 0.1rem;
+    margin-top: 0.5rem;
+}
+
+.text-left{
+    color: black;
+    background-color: rgb(218, 218, 218);
+    padding: 0.1rem;
+}
+
+.text-center{
+    color: black;
+    background-color: rgb(160, 160, 160);
+    padding: 0.1rem;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+.text-right{
+    color: black;
+    background-color: rgb(102, 102, 102);
+    padding: 0.1rem;
+    margin-top: 0.5rem;
+    text-align: right;
+}
+
+.footer{
+    color: white;
+    background-color: rgb(35, 126, 201);
+    padding: 1rem;
+}
+
+.footer h3{
+    color: antiquewhite;
+    text-align: center;
+}
+
+.footer p{
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+
+.button-con{
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+    margin-top: 0.5rem;
+}
+
+.btn{
+    display: inline;
+    color: white;
+    background-color: #128f1d;
+    padding: 0.8rem;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.5s ease;
+    transition: transform 0.5s ease;
+}
+
+.btn:Hover{
+    background-color: #37663b;
+    transform: translateY(-2px);
+}
+
+
