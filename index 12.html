@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Button Styling</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="./dist/output.css" rel="stylesheet" />
+</head>
+<body class="bg-gray-200 min-h-screen p-5 rounded-sm">
+
+    <h1 class="font-bold text-2xl">Button Styling Examples</h1>
+
+    <!--Basic Buttons-->
+    <div class="bg-white p-6 rounded-md mt-5">
+        <p class="text-lg font-bold">Basic Buttons</p>
+        <div class="flex gap-3 mt-8">
+
+            <button class="bg-blue-600 py-1.5 px-3 rounded-sm text-white text-sm hover:bg-blue-900 transition-colors duration-300 ease-in-out">Primary Button</button>
+
+            <button class="bg-gray-500 py-1.5 px-3 rounded-sm text-white text-sm hover:bg-gray-700 transition-colors duration-300 ease-in-out">Secondary Button</button>
+
+            <button class="bg-green-600 py-1.5 px-3 rounded-sm text-white text-sm hover:bg-green-700 transition-colors duration-300 ease-in-out">Success Button</button>
+
+            <button class="bg-red-600 py-1.5 px-3 rounded-sm text-white text-sm hover:bg-red-700 transition-colors duration-300 ease-in-out">Danger Button</button>
+        </div>
+    </div>
+
+    <!--Outline Button-->
+
+    <div class="bg-white p-6 rounded-md mt-5">
+        <p class="text-lg font-bold mb-3">Outline Buttons</p>
+
+    <div class="flex gap-3 mt-8">
+            <button class="bg-white py-1.5 px-3 rounded-sm border-2 border-blue-600 text-blue-600 text-sm hover:bg-blue-600 hover:text-white transition-colors duration-300 ease-in-out">Outline Button</button>
+
+            <button class="bg-white py-1.5 px-3 rounded-sm border-2 border-green-600 text-green-600 text-sm hover:bg-green-600 hover:text-white transition-colors duration-300 ease-in-out">Success Button</button>
+
+            <button class="bg-white py-1.5 px-3 rounded-sm border-2 border-red-600 text-red-600 text-sm hover:bg-red-600 hover:text-white transition-colors duration-300 ease-in-out">Danger Button</button>
+    </div>
+    </div>
+
+    <!--Link Button-->
+     
+    <div class="bg-white p-6 rounded-md mt-5">
+        <p class="text-lg font-bold">Link Buttons</p>
+
+    <div class="flex gap-3 mt-8">
+        <a href="#" class="text-blue-600 px-2 rounded-sm underline underline-offset-0 hover:bg-blue-200 hover:no-underline transition-all duration-300 ease-in">Link Style Button</a>
+
+        <a href="#" class="text-blue-600 px-2 rounded-sm underline underline-offset-0 hover:bg-blue-200 hover:no-underline transition-all duration-300 ease-in">Actual Link Styled as Button</a>
+    </div>
+    </div>
+
+    <!--Diferent sizes-->
+
+    <div class="bg-white p-6 rounded-md mt-5">
+        <p class="text-lg font-bold">Different Sizes</p>
+            
+            <div class="flex flex-wrap items-center gap-6 mt-8">
+            <button class="bg-blue-600 py-2 px-2 rounded-sm text-white text-sm hover:bg-blue-900 transition-colors duration-300 ease-in-out">Primary Button</button>
+            
+
+            
+            <button class="bg-gray-500 py-4 px-2 rounded-sm text-white text-sm hover:bg-gray-700 transition-colors duration-300 ease-in-out">Secondary Button</button>
+            
+
+            
+            <button class="bg-green-600 py-6 px-3 rounded-sm text-white text-sm hover:bg-green-700 transition-colors duration-300 ease-in-out">Success Button</button>
+
+        </div>
+
+        </div>
+
+    <!-- Rounded Buttons-->
+
+    <div class="bg-white p-6 rounded-md mt-5">
+        <p class="text-lg font-bold">Rounded Buttons</p>
+            
+            <div class="flex flex-wrap items-center gap-6 mt-8">
+            <button class="bg-blue-600 py-2 px-5 rounded-full text-white text-sm hover:bg-blue-900 transition-colors duration-300 ease-in-out">Primary Rounded</button>
+            
+
+            
+            <button class="bg-green-500 py-2 px-5 rounded-full text-white text-sm hover:bg-green-700 transition-colors duration-300 ease-in-out">Rounded Success</button>
+            
+
+            
+            <button class="bg-white py-2 px-5 border-2 border-blue-700 rounded-full text-blue-600 text-sm hover:bg-blue-600 hover:text-white transition-colors duration-300 ease-in-out">Rounded Outline</button>
+
+        </div>
+
+        </div>
+
+    <!--Button Group-->
+
+    <div class="bg-white p-6 rounded-md mt-5">
+        <p class="text-lg font-bold">Button Group</p>
+            
+            <div class="flex flex-wrap items-center gap-6 mt-8">
+
+            <button class="bg-blue-600 py-2 px-5 rounded-sm text-white text-sm hover:bg-blue-900 transition-colors duration-300 ease-in-out">First</button>
+    
+            <button class="bg-blue-600 py-2 px-5 rounded-sm text-white text-sm hover:bg-blue-900 transition-colors duration-300 ease-in-out">Second</button>
+    
+            <button class="bg-blue-600 py-2 px-5 rounded-sm text-white text-sm hover:bg-blue-900 transition-colors duration-300 ease-in-out">Third</button>
+    
+        </div>
+    </div>
+    
+</body>
+</html>

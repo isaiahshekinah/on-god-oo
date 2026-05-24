@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Classes & IDs Demonstration</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="./dist/output.css" rel="stylesheet" />
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col justify-between font-sans p-5 border border-gray-400">
+
+    <h1 class="text-3xl font-bold text-blue-700 text-center">CSS Classes & IDs Demonstration</h1>
+    <div class="p-5 border-2 ">
+        <p>This is a regular paragraph in a container.</p>
+        <span class="bg-yellow-400 inline-block w-full p-1 mb-2 mt-2">This paragraph has the highlight class.</span>
+        <p class="text-red-600">This paragraph has the warning class.</p>
+    </div>
+
+    <div class="p-5 border-2 ">
+        <p>Another container with different content.</p>
+        <span class="bg-sky-200 inline-block w-full p-1 mt-2 mb-2">This is an info box using a class.</span>
+        <p>Regular text followed by <span class="bg-yellow-400 inline-block p-0.5">highlighted text</span> within a paragraph.</p>
+    </div>
+
+    <div class="p-5 border-2 ">
+        <span class="bg-green-200 inline-block p-1 border-2 border-dashed border-green-800 w-full mb-2">This paragraph has a unique ID for special styling.</span>
+        <p class="text-red-700 bg-sky-200 p-2">This element uses multiple classes combined.</p>
+    </div>
+
+    <footer class="bg-slate-600 p-2">
+        <p class="text-center text-white">Footer content with ID styling</p>
+    </footer>
+
+
+    <script>
+        function add(a, b) {
+            return(a + b);
+        }
+        const r1 = add(10, 5);
+        console.log(r1)
+
+        function sub(a, b) {
+            return(a - b);
+        }
+        const r2 = sub(25, 5);
+        console.log(r2)
+
+        function multiply(a, b) {
+            return(a * b);
+        }
+       const r3 = multiply(5, 5);
+       console.log(r3)
+
+        function divide(a, b) {
+            return(a / b);
+        }
+        const r4 = divide(60, 2);
+        console.log(r4)
+
+        function modulus(a, b) {
+            return(a % b);
+        }
+        const r5 = add(5, 6);
+        console.log(r5)
+
+        function power(a, b) {
+        return(a ** b);
+        } 
+        const r6 = power(5, 5)
+        console.log(r6)
+
+        function squareroot(num) {
+            return(Math.sqrt(num));
+        }
+        const r7 = squareroot(100)
+        console.log(r7)
+
+    </script>
+    
+</body>
+</html>

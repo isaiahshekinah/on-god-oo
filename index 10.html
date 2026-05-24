@@ -1,58 +1,143 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Layout</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link href="./dist/output.css" rel="stylesheet">
-
-</head>
-<body>
-
+    <link href="./dist/output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-100 min-h-screen flex flex-col justify-between font-sans">
     <header class="p-8 bg-sky-900">
-        <h1 class="text-center text-white font-bold text-[30px] mb-2">Website Layout</h1>
-        <h3 class="text-center text-gray-100">Simple div-based structure</h3>
+      <h1 class="text-center text-white font-bold text-[30px] mb-2">
+        Website Layout
+      </h1>
+      <h3 class="text-center text-gray-100">Simple div-based structure</h3>
     </header>
 
     <nav class="p-1 bg-sky-800">
-        <ul class="flex text-gray-100 gap-6 justify-center">
-            <li><a href="" class="hover:text-gray-300">Home</a></li>
-            <li><a href="" class="hover:text-gray-300">About</a></li>
-            <li><a href="" class="hover:text-gray-300">Services</a></li>
-            <li><a href="" class="hover:text-gray-300">Portfolio</a></li>
-            <li><a href="" class="hover:text-gray-300">Contact</a></li>
-        </ul>    
-
+      <ul class="flex text-gray-100 gap-6 justify-center">
+        <li><a href="" class="hover:text-gray-300">Home</a></li>
+        <li><a href="" class="hover:text-gray-300">About</a></li>
+        <li><a href="" class="hover:text-gray-300">Services</a></li>
+        <li><a href="" class="hover:text-gray-300">Portfolio</a></li>
+        <li><a href="" class="hover:text-gray-300">Contact</a></li>
+      </ul>
     </nav>
 
-<section class="p-5">
-
-    <div class="bg-gray-300 w-120 h-auto px-5 py-7">
+    <section class="p-5 flex lg:justify-between w-full items-start gap-6 flex-grow flex-col lg:flex-row ">
+      <div class="bg-gray-300 w-120 h-auto px-5 py-7">
         <h1 class="font-bold text-xl mb-3">Main Content Area</h1>
         <p>This is the primary content section of the webpage.</p>
 
-        <div class="bg-sky-500 mt-3 px-4 py-5 rounded-lg">
-            <h2 class="font-bold text-lg text-white mb-3">Content Box 1</h2>
-            <p class="text-gray-200">This demonstrates how divs can be nested to create complex layouts.</p>
+        <div class="bg-sky-500 mt-3 px-4 py-3 rounded-lg">
+          <h2 class="font-bold text-lg text-white mb-3 mt-2">Content Box 1</h2>
+          <p class="text-gray-200 text-[15px]">
+            This demonstrates how divs can be nested to create complex layouts.
+          </p>
         </div>
 
         <div class="bg-sky-500 mt-3 px-4 py-5 rounded-lg">
-            <h2 class="font-bold text-lg text-white mb-3">Content Box 2</h2>
-            <p class="text-gray-200">Each div can have its own styling and content structure.</p>
+          <h2 class="font-bold text-lg text-white mb-3">Content Box 2</h2>
+          <p class="text-gray-200 text-[15px]">
+            Each div can have its own styling and content structure.
+          </p>
         </div>
         <div class="bg-red-900 mt-3 px-4 py-5 rounded-lg">
-            <h2 class="font-bold text-lg text-white mb-3">Inline Styled Div</h2>
-            <p class="text-gray-200">This div uses inline styles for demonstration.</p>
+          <h2 class="font-bold text-lg text-white mb-3">Inline Styled Div</h2>
+          <p class="text-gray-200 text-[15px]">
+            This div uses inline styles for demonstration.
+          </p>
         </div>
-        
-    </div>
+      </div>
+
+         <div class="bg-gray-400 w-50 h-full px-5 py-7">
+        <h1 class="font-bold text-lg mb-3">Sidebar</h1>
+        <p class="text-[16px]">This is the sidebar content area.</p>
+
+        <div class="bg-green-600 mt-3 px-4 py-3 rounded-lg">
+          <h2 class="font-bold text-lg text-white mb-3 mt-2">Sidebar Item 1</h2>
+          <p class="text-gray-200 text-[14px]">
+            Additional information or links
+          </p>
+        </div>
+
+        <div class="bg-purple-600 mt-3 px-4 py-5 rounded-lg">
+          <h2 class="font-bold text-lg text-white mb-3">Sidebar Item 2</h2>
+          <p class="text-gray-200 text-[14px]">
+            More sidebar content
+          </p>
+        </div>
+    </section>
+
+    <footer class="bg-sky-950 p-5">
+        <p class="text-center text-white text-sm">© 2024 Simple Layout. All rights reserved.</p>
+    </footer>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script>
+
+      //let hour = 18;
+
+     // if(hour >= 1 && hour < 12) {
+      //  console.log('Good Morning');
+     // }
+     // else if(hour >= 12 && hour <= 15) {
+       // console.log('Good Afternoon');
+      //}
+      //else
+    //console.log('Good Evening')
+
+    let age = 18;
+    let job = true;
+    let creditScore = 80;
+    let salary = 500;
+    let debt = 200;
+
+    if (age < 18 || age > 60) {
+        console.log("Rejected: Age is not Eligible");
+    }
+    else if(job === false) {
+        console.log("Rejected: Get yo ass a job");
+    }
+    else if(creditScore < 50) {
+       // console.log("Rejected: Low Credit Score");
+        if(salary > 1000 && creditScore < 50) {
+            console.log("Approved")
+        } else{
+            console.log("Rejected")
+        }
+    }
+    else if (salary < 1000) {
+        //console.log("Rejected: You need to get yo money up");
+        if(salary < 1000 && creditScore > 50) {
+            console.log("Approved")
+        } else{
+            console.log("Rejected")
+        }
+    }
+    else if(debt > 200) {
+        console.log("Rejected Service your Debt");
+    }
+    else{
+        console.log("Fully Approved")
+    }
+
+
     
 
-</section>
-    
-
-    
-    
-</body>
+      
+      
+    </script>
+  </body>
 </html>
